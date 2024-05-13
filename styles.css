@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/subtle-rombus-white-gray-pattern-background_1017-25098.jpg?t=st=1714430818~exp=1714431418~hmac=47fd2b240bf2bdcf90a2ac40de54e359caa59fc9029e65b1172ea66e698a0f4d");
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+header {
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+    flex-shrink: 0;
+    margin-top: 50px;
+    width: 100%;
+}
+
+#divider {
+    border: 1px solid blueviolet;
+}
+
+/* contenedor mayor */
+.main_container {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Logo */
+#logo_uade {
+    width: 100px; 
+    height: auto; 
+    background-color: white;
+}
+
+/* Foto */
+#foto {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.txtContainer {
+    max-width: calc(50% - 20px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 1.4;
+    margin: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+#link_prototipo,
+#link_repo,
+#link_website {
+    background-color: blueviolet;
+    color: white;
+    padding: 3px; 
+    border-radius: 5px;
+}
+
+a:hover {
+    filter: brightness(150%);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: stretch; 
+        text-align: left; 
+    }
+
+    .txtContainer {
+        max-width: calc(100% - 40px); 
+        line-height: 1.5;
+    }
+}
